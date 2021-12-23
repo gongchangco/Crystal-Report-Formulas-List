@@ -1,0 +1,5 @@
+// Replace Blank Field With Another Field
+
+if {str.fieldname.1} = "" or IsNull({str.fieldname.1}) // If string field 1 is blank or null 
+then {str.fieldname.2}                                 // Then use different string field
+else {str.fieldname.1}                                 // If string field 1 is not blank, use string field 1
